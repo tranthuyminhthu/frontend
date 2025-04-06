@@ -1,0 +1,115 @@
+/* frontend/src/components/TestCaseDetail.css */
+.test-case-detail-page {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .detail-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .back-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .detail-header h2 {
+    font-size: 24px;
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .test-case-id {
+    color: #666;
+    margin-right: 5px;
+  }
+  
+  .detail-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .detail-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .detail-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .tab {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .tab.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  .detail-content {
+    padding: 10px 0;
+  }
+  
+  .detail-section {
+    margin-bottom: 20px;
+  }
+  
+  .detail-section h3 {
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+  
+  .detail-section p {
+    margin: 0;
+    color: #666;
+  }
+  
+  .steps-header {
+    display: grid;
+    grid-template-columns: 50px 2fr 1fr 1fr 50px;
+    padding: 10px 0;
+    font-weight: bold;
+    color: #666;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .step-row {
+    display: grid;
+    grid-template-columns: 50px 2fr 1fr 1fr 50px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    align-items: center;
+  }
+  
+  .step-number {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .step-action,
+  .step-data,
+  .step-expected,
+  .step-attachment {
+    padding: 0 5px;
+  }

@@ -1,0 +1,257 @@
+/* frontend/src/components/CreateTestCaseAI.css */
+.ai-create-form {
+}
+
+.ai-form-header {
+  margin-bottom: 20px;
+}
+
+.ai-form-content {
+  display: flex;
+  gap: 20px;
+}
+
+.ai-form-left {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.ai-form-right {
+  flex: 1;
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.lable-ai {
+  margin-bottom: 20px
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: 300px;
+  resize: vertical;
+}
+
+.required-asterisk {
+  color: red;
+}
+
+.ai-form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.generate-btn,
+.save-btn,
+.cancel-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.generate-btn,
+.save-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+  color: black;
+}
+
+.generate-btn:disabled,
+.cancel-btn:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* CSS cho danh sách test case */
+.test-case-list {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.test-case-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.test-case-item {
+  margin-bottom: 10px;
+}
+
+.test-case-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.test-case-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #e6f0fa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.test-case-title:hover {
+  background-color: #d1e3f8;
+}
+
+.toggle-icon {
+  margin-right: 8px;
+  font-size: 12px;
+}
+
+.test-case-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 50%;
+  margin-right: 8px;
+  font-size: 12px;
+}
+
+.remove-test-case-btn {
+  background: none;
+  border: none;
+  color: #ff0000;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.test-case-details {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.detail-section {
+  margin-bottom: 15px;
+}
+
+.detail-section strong {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.detail-section p {
+  margin: 0;
+  color: #555;
+}
+
+.step-item {
+  margin-bottom: 15px;
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.step-number {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 8px;
+}
+
+.step-details {
+  margin-top: 10px;
+}
+
+.step-data,
+.step-expected {
+  margin-bottom: 5px;
+}
+
+.step-data strong,
+.step-expected strong {
+  display: block;
+  font-weight: bold;
+  color: #666;
+}
+
+.step-data p,
+.step-expected p {
+  margin: 0;
+  color: #777;
+  font-style: italic;
+}
+
+.list-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+/* Thêm vào file CreateTestCaseAI.css */
+.loading-spinner {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.loading-spinner::after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
