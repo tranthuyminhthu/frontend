@@ -221,7 +221,7 @@ const CreateTestCaseAI: React.FC<CreateTestCaseAIProps> = ({ onSave, selectedSui
 
       {isFormVisible ? (
         <div className="ai-form-content">
-          <div className="ai-form-right">
+          <div className="ai-form-content">
             <div className="form-group">
               <label>
                 Feature<span className="required-asterisk">*</span>
@@ -245,7 +245,7 @@ const CreateTestCaseAI: React.FC<CreateTestCaseAIProps> = ({ onSave, selectedSui
             </div>
             <div className="ai-form-actions">
               <button className="generate-btn" onClick={handleGenerateWithAI} disabled={loading}>
-                {loading ? 'Đang tạo...' : 'Generate'}
+                {loading ? 'Generating...' : 'Generate'}
               </button>
               <button className="cancel-btn" onClick={handleCancel} disabled={loading}>
                 Cancel
@@ -256,7 +256,7 @@ const CreateTestCaseAI: React.FC<CreateTestCaseAIProps> = ({ onSave, selectedSui
       ) : (
         <div className="test-case-list">
           {generatedTestCases.length === 0 ? (
-            <p>Chưa có test case nào được tạo.</p>
+            <p>No test case</p>
           ) : (
             <>
               <div className="ai-form-content">

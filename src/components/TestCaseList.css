@@ -58,6 +58,10 @@
   background-color: #0056b3;
 }
 
+.new-test-btn{
+  padding: 4px 6px
+}
+
 .search-input {
   padding: 8px;
   border: 1px solid #ddd;

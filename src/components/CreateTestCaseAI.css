@@ -4,6 +4,7 @@
 
 .ai-form-header {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .ai-form-content {
@@ -254,4 +255,11 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.ai-form-content{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-width: 1000px;
 }

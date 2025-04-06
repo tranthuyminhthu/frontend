@@ -54,7 +54,6 @@ const BasicSection: React.FC<BasicSectionProps> = ({ formData, suites, handleCha
           name="title"
           value={formData.title}
           onChange={(e) => handleChange(e)}
-          placeholder="Authorization"
         />
       </div>
       <div className="form-group">
@@ -62,8 +61,7 @@ const BasicSection: React.FC<BasicSectionProps> = ({ formData, suites, handleCha
         <textarea
           name="description"
           value={formData.description}
-          onChange={(e) => handleChange(e)}
-          placeholder="For example: We can authorize on the page http://example.com/login"
+          onChange={(e) => handleChange(e)}   
         ></textarea>
       </div>
       <div className="form-row three-columns">
@@ -79,7 +77,7 @@ const BasicSection: React.FC<BasicSectionProps> = ({ formData, suites, handleCha
                 handleChange(event as any, newValue.value, 'suite');
               }
             }}
-            renderInput={(params) => <TextField {...params} label="Type to search" />}
+            renderInput={(params) => <TextField {...params}/>}
             renderOption={(props, option) => (
               <li {...props}>
                 <span style={{ marginLeft: 8 }}>{option.label}</span>
@@ -108,7 +106,7 @@ const BasicSection: React.FC<BasicSectionProps> = ({ formData, suites, handleCha
                 handleChange(event as any, newValue.value, 'severity');
               }
             }}
-            renderInput={(params) => <TextField {...params} label="Type to search" />}
+            renderInput={(params) => <TextField {...params}  />}
             renderOption={(props, option) => (
               <li {...props}>
                 {option.icon}
@@ -138,7 +136,7 @@ const BasicSection: React.FC<BasicSectionProps> = ({ formData, suites, handleCha
                 handleChange(event as any, newValue.value, 'priority');
               }
             }}
-            renderInput={(params) => <TextField {...params} label="Type to search" />}
+            renderInput={(params) => <TextField {...params}  />}
             renderOption={(props, option) => (
               <li {...props}>
                 {option.icon}
@@ -170,7 +168,7 @@ const BasicSection: React.FC<BasicSectionProps> = ({ formData, suites, handleCha
                 handleChange(event as any, newValue.value, 'type');
               }
             }}
-            renderInput={(params) => <TextField {...params} label="Type to search" />}
+            renderInput={(params) => <TextField {...params}  />}
             renderOption={(props, option) => (
               <li {...props}>
                 <span style={{ marginLeft: 8 }}>{option.label}</span>
@@ -199,7 +197,7 @@ const BasicSection: React.FC<BasicSectionProps> = ({ formData, suites, handleCha
                 handleChange(event as any, newValue.value, 'layer');
               }
             }}
-            renderInput={(params) => <TextField {...params} label="Type to search" />}
+            renderInput={(params) => <TextField {...params}  />}
             renderOption={(props, option) => (
               <li {...props}>
                 {option.icon}
@@ -229,7 +227,7 @@ const BasicSection: React.FC<BasicSectionProps> = ({ formData, suites, handleCha
                 handleChange(event as any, newValue.value, 'automationStatus');
               }
             }}
-            renderInput={(params) => <TextField {...params} label="Type to search" />}
+            renderInput={(params) => <TextField {...params}  />}
             renderOption={(props, option) => (
               <li {...props}>
                 {option.icon}
@@ -261,7 +259,7 @@ const BasicSection: React.FC<BasicSectionProps> = ({ formData, suites, handleCha
                 handleChange(event as any, newValue.value, 'isFlaky');
               }
             }}
-            renderInput={(params) => <TextField {...params} label="Type to search" />}
+            renderInput={(params) => <TextField {...params}  />}
             renderOption={(props, option) => (
               <li {...props}>
                 <span style={{ marginLeft: 8 }}>{option.label}</span>
@@ -288,7 +286,7 @@ const BasicSection: React.FC<BasicSectionProps> = ({ formData, suites, handleCha
                 handleChange(event as any, newValue.value, 'milestone');
               }
             }}
-            renderInput={(params) => <TextField {...params} label="Type to search" />}
+            renderInput={(params) => <TextField {...params}  />}
             renderOption={(props, option) => (
               <li {...props}>
                 <span style={{ marginLeft: 8 }}>{option.label}</span>
@@ -317,7 +315,7 @@ const BasicSection: React.FC<BasicSectionProps> = ({ formData, suites, handleCha
                 handleChange(event as any, newValue.value, 'behavior');
               }
             }}
-            renderInput={(params) => <TextField {...params} label="Type to search" />}
+            renderInput={(params) => <TextField {...params}  />}
             renderOption={(props, option) => (
               <li {...props}>
                 <span style={{ marginLeft: 8 }}>{option.label}</span>
